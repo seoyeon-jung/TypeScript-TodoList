@@ -8,8 +8,15 @@ interface Todolist {
   check: boolean;
 }
 
+interface Item {
+  id: number;
+  title: string;
+  text: string;
+  check: boolean;
+}
+
 interface TItem {
-  item: string;
+  item: Item;
   onToggle(id: number): void;
   onDel(id: number): void;
 }
