@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import "../../styles/TodoInput.css";
+interface addHandler {
+  onAdd(title: string, text: string): void;
+}
 
-const TodoInput = ({ onAdd }: any) => {
+const TodoInput = ({ onAdd }: addHandler) => {
   const [title, setTitle] = useState("");
   const [text, setText] = useState("");
 
