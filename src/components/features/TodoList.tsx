@@ -2,7 +2,7 @@ import TodoItem from "./TodoItem";
 import "../../styles/TodoList.css";
 
 interface Todolist {
-  todo: any;
+  todo: Item[];
   onToggle(id: number): void;
   onDel(id: number): void;
   check: boolean;
@@ -15,25 +15,25 @@ interface Item {
   check: boolean;
 }
 
-interface TItem {
-  item: Item;
-  onToggle(id: number): void;
-  onDel(id: number): void;
-}
+// interface TItem {
+//   item: Item;
+//   onToggle(id: number): void;
+//   onDel(id: number): void;
+// }
 
-interface TList extends TItem {
-  id: number;
-  title: string;
-  text: string;
-  check: boolean;
-}
+// interface List extends TItem {
+//   id: number;
+//   title: string;
+//   text: string;
+//   check: boolean;
+// }
 
 const TodoList = ({ todo, onToggle, onDel, check }: Todolist) => {
   return (
     <div className="TodoList">
       <h2>{check ? "완료" : "진행 중"}</h2>
       {todo.map(
-        (item: TList) =>
+        (item: Item) =>
           item.check === check && (
             <TodoItem
               key={item.id}
