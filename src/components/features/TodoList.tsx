@@ -26,11 +26,11 @@ const TodoList = ({ todo, onToggle, onDel, check }: Todolist) => {
     <div className="TodoList">
       <h2>{check ? "완료" : "진행 중"}</h2>
       {todo.map(
-        (item: any) =>
+        (item: TList) =>
           item.check === check && (
             <TodoItem
               key={item.id}
-              item={item}
+              item={item.item}
               onToggle={onToggle}
               onDel={onDel}
             />
