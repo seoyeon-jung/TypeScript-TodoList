@@ -1,12 +1,12 @@
 import React from "react";
 
 interface TItem {
-  item: string;
+  item: Item;
   onToggle(id: number): void;
   onDel(id: number): void;
 }
 
-interface Todo {
+interface Item {
   id: number;
   title: string;
   text: string;
@@ -14,7 +14,7 @@ interface Todo {
 }
 
 const TodoItem = ({ item, onToggle, onDel }: TItem) => {
-  const { id, title, text, check }: any = item;
+  const { id, title, text, check }: Item = item;
 
   return (
     <li>

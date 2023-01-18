@@ -30,7 +30,7 @@ const TodoList = ({ todo, onToggle, onDel, check }: Todolist) => {
           item.check === check && (
             <TodoItem
               key={item.id}
-              item={item.item}
+              item={item}
               onToggle={onToggle}
               onDel={onDel}
             />
