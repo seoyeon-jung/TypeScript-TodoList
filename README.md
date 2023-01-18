@@ -1,4 +1,3 @@
-# React로 TodoList 만들기
 # React + TypeScript로 투두리스트 만들기
 ### 2023.01.18
 - [React로 TodoList 만들기](https://github.com/seoyeon-jung/react-todolist)를 typescript로 리팩토링한 프로젝트입니다
