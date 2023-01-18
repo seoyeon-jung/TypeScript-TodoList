@@ -10,6 +10,8 @@
 <br>
 
 ## 완성된 페이지
+[오늘 뭐하지?🤔](https://type-script-todo-list-delta.vercel.app/)  << 바로가기!
+<br>
 <br>
 <br>
 
@@ -25,7 +27,8 @@
 <br>
 <br>
 
-## 폴더 구조
-<br>
-<br>
 ## Error Log
+![image](https://user-images.githubusercontent.com/95006849/213172189-1704ab86-6f00-4600-a25f-2f27789c1638.png)
+- 무분별한 interface 사용으로 인해 item의 type을 읽지 못하는 오류 발생
+- 중복되는 type을 제거하고 item의 type을 제대로 지정해주니 해결 완료
+- todo의 type은 Item[] 배열 형태로 지정해주었다
